@@ -1,0 +1,76 @@
+:root{
+    --color-font: #f0f4f3;
+    --color-heading: #d8d8d8;
+}
+
+@font-face {
+    font-family: FinalFantasy;
+    src: url('./fonts/OPTIEngeEtienne.otf');
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url('./fonts/Merriweather-Regular.ttf');
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.venat{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 55% 0;
+    z-index: 0;
+}
+
+.left{
+    height: 100%;
+    width: 35vw;
+}
+
+.right{
+    height: 100%;
+    width: 65vw;
+    padding: 5vw 16vw 0vw 3.5vw;
+    font-size: 0.9rem;
+    font-family: Merriweather;
+    line-height: 2rem;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    width: inherit;
+    height: 7vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    bottom: 12vh;
+    text-align: center;
+    font-size: 4.5em;
+    z-index: 2;
+  }
+
+.card-heading{
+    font-family: FinalFantasy;
+    z-index: 3;
+    font-stretch: 20%;
+    font-size: 4.5vw;
+    color: var(--color-font);
+    text-shadow: rgb(65, 144, 218) 1px 0 10px;
+}
+
+.logo{
+    height: 6.5vw;
+}
+
+.start{
+    margin-top: 4vw;
+}
