@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./fonts/OPTIEngeEtienne.otf":[["OPTIEngeEtienne.cb03f090.otf","fonts/OPTIEngeEtienne.otf"],"fonts/OPTIEngeEtienne.otf"],"./fonts/Merriweather-Regular.ttf":[["Merriweather-Regular.8cea6fe3.ttf","fonts/Merriweather-Regular.ttf"],"fonts/Merriweather-Regular.ttf"],"_css_loader":"../../.nvm/versions/node/v22.11.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../.nvm/versions/node/v22.11.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./fonts/OPTIEngeEtienne.otf":[["OPTIEngeEtienne.cb03f090.otf","fonts/OPTIEngeEtienne.otf"],"fonts/OPTIEngeEtienne.otf"],"./fonts/Merriweather-Regular.ttf":[["Merriweather-Regular.8cea6fe3.ttf","fonts/Merriweather-Regular.ttf"],"fonts/Merriweather-Regular.ttf"],"./fonts/Merriweather-Bold.ttf":[["Merriweather-Bold.e1df39eb.ttf","fonts/Merriweather-Bold.ttf"],"fonts/Merriweather-Bold.ttf"],"_css_loader":"../../.nvm/versions/node/v22.11.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../.nvm/versions/node/v22.11.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -197,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36347" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45313" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
