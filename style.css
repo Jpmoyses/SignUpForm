@@ -2,6 +2,9 @@
     --color-font: #f0f4f3;
     --color-heading: #d8d8d8;
     --color-label: #292828;
+    --required: #C62E2E;
+    --blue: rgb(65, 144, 218);
+    --blue-var: #30a3f5;
 }
 
 @font-face {
@@ -28,11 +31,12 @@ body{
 }
 
 .venat{
-    height: 100%;
-    width: 100%;
+    height: 100vmin;
+    width: inherit;
     object-fit: cover;
     object-position: 55% 0;
     z-index: 0;
+    vertical-align:bottom
 }
 
 .left{
@@ -70,7 +74,7 @@ body{
     font-stretch: 20%;
     font-size: 4.5vw;
     color: var(--color-font);
-    text-shadow: rgb(65, 144, 218) 1px 0 10px;
+    text-shadow: var(--blue) 1px 0 10px;
 }
 
 .logo{
@@ -91,10 +95,29 @@ body{
     gap: 6rem;
 }
 
+.btn{
+    padding: 0.8rem 3rem 0.8rem 3rem;
+    margin: 1.5rem 0rem 0rem 0rem;
+    border: 3px solid var(--blue-var);
+    border-radius: 12px;
+    background-color: var(--color-font);
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover{
+    background-color: var(--blue-var);
+    color: var(--color-font);
+    transform: scale(1.05);
+}
+
 label{
     letter-spacing: 1.3px;
     font-size: 0.8rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     color: var(--color-label);
     line-height: 0px;
@@ -108,4 +131,33 @@ input{
     font-size: 1.1rem;
     padding: 0.3rem;
     width: 19vw;
+    transition-duration: 0.2s;
+}
+
+p{
+    padding-top: 0.4vw;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+a{
+    color: var(--blue-var);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+p, label, .btn{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:focus{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+input:invalid{
+    border: 1px solid var(--required);
+}
+
+input:required{
+    border: 1px solid var(--color-heading);
 }
